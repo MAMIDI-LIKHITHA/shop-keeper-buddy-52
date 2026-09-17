@@ -141,4 +141,25 @@
     background-color: var(--color-background);
     color: var(--color-foreground);
   }
+
+  .font-display {
+    font-family: Georgia, "Times New Roman", serif;
+  }
+
+  .admin-input {
+    display: block;
+    margin-top: 0.5rem;
+    min-height: 2.75rem;
+    width: 100%;
+    border-radius: 0.75rem;
+    border: 1px solid var(--color-input);
+    background-color: var(--color-background);
+    padding: 0.75rem 0.875rem;
+    font-weight: 400;
+    outline: none;
+  }
+
+  .admin-input:focus {
+    box-shadow: 0 0 0 2px var(--color-ring);
+  }
 }

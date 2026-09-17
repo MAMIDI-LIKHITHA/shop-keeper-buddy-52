@@ -36,7 +36,7 @@ function Home() {
       const nextProducts = productsData ?? [];
       setProducts(nextProducts);
       setSettings(settingsData);
-      const paths = nextProducts.map((product) => product.image_url ?? "").filter(Boolean);
+      const paths = [...nextProducts.map((product) => product.image_url ?? ""), settingsData?.logo_url ?? ""].filter(Boolean);
       if (paths.length) setImageUrls(await resolveProductImageUrls({ data: { paths } }));
     };
     void load();
